@@ -1,0 +1,456 @@
+/* Main element changes for selective theming */
+::selection{
+	background: rgba(255, 255, 255, .3);
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: rgba(255, 255, 255, .3);
+	text-shadow: none;
+}
+
+/*header#main-header,#about-header,#about-content{padding:36px;}header#main-header{width:100vw;position:fixed;z-index:10;background:#0d47a1;}header#main-header img{max-height:50px;}header#main-header a.navbar-brand h1{margin:0;line-height:0.5;font-size:2em;font-weight:400;color:#faed38;}header#main-header .navbar-default{background-color:transparent;}header#main-header .navbar-default,header#main-header .navbar-default .navbar-toggle{border:none;}header#main-header .navbar-default .navbar-toggle{margin-top:10px;}header#main-header .navbar-default .navbar-toggle:focus,.navbar-default .navbar-toggle:hover{background-color:transparent;}header#main-header .navbar-default .navbar-toggle .icon-bar{background-color:#fff;}header#main-header .navbar{margin:0;}header#main-header .navbar ul{margin-top:3px;}header#main-header .navbar ul li a{color:#fff;font-weight:400;padding:12px;}header#main-header .navbar-collapse{border:none;-webkit-box-shadow:none;box-shadow:none;}*/
+
+h1 {
+	margin: 0px;
+	padding: 15px;
+	font-size: 72px;
+}
+
+hr {
+	opacity: .3;
+}
+
+p, a, h1, h2, h3, h4, h5, h6 {
+	font-weight: 100;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body, html {
+	min-width: 100%;
+	width: 100%;
+	height: 100%;
+	color: black;
+	background-color: #b71c1c;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 200;
+}
+
+h1, h2 {
+	font-family: 'Lobster', Helvetica;
+}
+
+a {
+	color: #FFF;
+	transition: .5s;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #b71c1c;
+}
+
+.phone a:visited {
+	color: black;
+}
+
+.go-to a:visited {
+	color: white;
+}
+
+/* Page wrapper for sticky footer */
+
+#wrapper {
+	min-height: 100%;
+	margin-bottom: -300px;
+}
+
+#wrapper:after {
+  content: "";
+  display: block;
+}
+
+@media (max-width: 990px) {
+	#wrapper {
+		margin-bottom: -600px;
+	}
+}
+
+/* Header changes */
+
+header {
+	background-color: #b71c1c;
+}
+
+header a {
+	transition: .5s;
+	color: white;
+}
+
+/* Home page */
+
+/* Front content changes */
+
+.overview-pic {
+	margin: 0 auto;
+	height: 250px;
+}
+
+#front-content {
+	height: 500px;
+	background: url(/assets/img/other/header.jpg) no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+@media screen and (min-width: 1280px) {
+	#front-content	{
+		background-size: cover;
+	}
+}
+
+#front-content-text h1 {
+	padding: 200px 0;
+	margin: 0;
+	color: #fff !important;
+	font-size: 50px;
+	text-shadow: rgba(183, 28, 28, 0.7) 0px 0px 10px;
+}
+
+#awards-background {
+	/*background-color: #990000;*/
+	padding: 10px 0;
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 0;
+}
+
+#badges h2 {
+	display: inline;
+	color: white;
+}
+
+.ribbon {
+  position: relative;
+  background: rgba(145, 0, 0, 1);
+  color: #fff;
+  text-align: center;
+  padding: 1em 2em; /* Adjust to suit */
+  margin: 30px 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.ribbon:before, .ribbon:after {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: -2.15em;
+  border: 3.5em solid rgba(170, 0, 0, 1);
+  z-index: -1;
+}
+.ribbon:before {
+  left: -6em;
+  border-right-width: 4.5em;
+  border-left-color: transparent;
+}
+.ribbon:after {
+  right: -6em;
+  border-left-width: 4.5em;
+  border-right-color: transparent;
+}
+.ribbon .ribbon-content:before, .ribbon .ribbon-content:after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-style: solid;
+  border-color: #990000 transparent transparent transparent;
+  bottom: -1em;
+}
+.ribbon .ribbon-content:before {
+  left: 0;
+  border-width: 1em 0 0 1em;
+}
+.ribbon .ribbon-content:after {
+  right: 0;
+  border-width: 1em 1em 0 0;
+}
+
+/* Sample menu */
+
+#featured-menu-background {
+	color: white;
+}
+
+#featured-menu-fix {
+	padding-bottom: 25px;
+}
+
+#home-content .menu-item {
+	text-align: center;
+}
+
+.menu-item {
+	border: solid rgba(255, 255, 255, .35) 1px;
+	background-color: #B40000;
+	color: white;
+	display: inline-block;
+	margin: 20px 0;
+	height: 271px;
+	width: 300px;
+}
+
+#home-content .menu-item {
+	border-color: rgba(255, 255, 255, .5);
+}
+
+.menu-item {
+	margin-left: 0;
+}
+
+.menu-item:last-child {
+	margin-left: 0;
+}
+
+
+.menu-item:last-of-type {
+	margin-right: 0px;
+}
+
+.menu-item-picture {
+	width: 270px;
+	height: 258px;
+}
+
+.menu-item-description {
+	width: 235px;
+	height: 236px;
+}
+
+.menu-item h3 {
+	font-size: 18px;
+	font-weight: 400;
+}
+
+.menu-item h4 {
+	float: right;
+	text-align: right;
+	padding-right: 12px;
+}
+
+.menu-item p {
+	float: left;
+	text-align: left;
+	padding: 0 12px;
+}
+
+.price {
+	position: absolute;
+	margin-top: 170px;
+	margin-left: 180px;
+}
+
+.price-two {
+	margin-left: 135px;
+	margin-top: 150px;
+}
+
+.price-three {
+	margin-left: 165px;
+	margin-top: 130px;
+}
+
+.price-beverage {
+	margin-left: 130px;
+}
+
+@media (max-width: 530px) {
+	#featured-menu-fix .menu-item:first-of-type {
+		margin-left: 40px;
+	}
+}
+
+/* Info changes */
+
+#info-background {
+	background-image: url(/assets/img/other/pancake1_medium_blurred.png);
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+#info {
+	padding: 100px 0;
+	color: #b71c1c;
+}
+
+#info h2 {
+	font-size: 72px;
+	padding: 0 15px;
+}
+
+#info h3 {
+	font-size: 32px;
+	padding: 0 15px;
+}
+
+#info-boxes .text-center i {
+	padding: 0 20px;
+}
+
+/* Blog changes */
+
+#blog-background {
+	background: url(https://subtlepatterns.com/patterns/mooning.png) repeat #8B8B8B;
+}
+
+#blog-background-overlay {
+	background-color: rgba(165, 0, 0, 0.8);
+}
+
+#blog * {
+	color: #FFF;
+}
+
+#blog hr {
+	border-color: #9E9E9E;
+	opacity: .1;
+}
+
+#blog h1 {
+	padding-left: 0;
+	transition: .3s;
+}
+
+#blog h3 {
+	margin-bottom: 20px;
+}
+
+#blog .btn {
+	color: #414141;
+}
+
+#blog a:hover, #blog h1:hover {
+	color: #b71c1c;
+}
+
+/* Story changes */
+
+#story {
+	color: white;
+	padding-bottom: 20px;
+}
+
+#story h3 blockquote {
+	font-size: 36px;
+	border-left: none;
+	padding-left: 0;
+}
+
+#story p {
+	font-size: 20px;
+	text-align: justify;
+}
+
+#story-pic {
+	height: 400px;
+	overflow: hidden;
+}
+
+#story-pic img {
+	margin: 0 auto;
+}
+
+/* Footer changes */
+
+.pull-footer {
+	height: 300px;
+}
+
+#pad {
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+#pad p {
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+footer {
+	height: 300px;
+	color: #FFF;
+	position: block;
+}
+
+footer, #wrapper:after {
+	height: 300px;
+}
+
+#footer-color-background {
+	background-color: rgba(145, 0, 0, 1);
+	height: 300px;
+}
+
+@media (max-width: 990px) {
+	footer, .pull-footer, #wrapper:after, #footer-color-background {
+		height: 600px;
+	}
+}
+
+footer h2 {
+	margin-top: 0;
+	color: #FFF;
+}
+
+footer hr {
+	border-color: #FFF;
+}
+
+/* Mixed changes */
+
+#coupons-content, #home-content, #find-content, #menu-content, h1 {
+	color: white;
+}
+
+
+/* Menu page */
+
+#menu-content h2 {
+	font-size: 40px;
+}
+
+#menu-content ul:first-of-type {
+	margin-top: 10px;
+	color: #b71c1c;
+	display: flex;
+}
+
+/* Find us page */
+
+#find-content h3 {
+	margin-top: 0;
+}
+
+/* Coupons page */
+
+/* jQuery Carousel / Slick */
+
+.slick-track {
+	background-color: rgba(3, 3, 3, 0.1);
+}
+
+#mobile-menu-content {
+	display: none;
+}
+
+@media (max-width: 800px){
+	.slider-hidden {
+		display: none;
+	}
+	#mobile-menu-content {
+		display: block;
+	}
+}
