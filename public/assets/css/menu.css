@@ -1,0 +1,34 @@
+.header{
+  font-size: 15px;
+  color: black;
+  position: relative;
+}
+
+#main-header {
+  background: #b71c1c;
+  padding: 40px 0; }
+
+#main-nav {
+  font-size: 22px;
+  text-align: right; }
+
+#main-nav ul {
+  margin: 7px 0 0 0;
+  padding: 0; }
+
+#main-nav ul li {
+  list-style-type: none;
+  display: inline-block; }
+
+#main-nav a {
+  display: block;
+  color: #fff;
+  padding: 0 20px; }
+
+  #main-nav a:hover {
+    color: black;
+  }
+
+#page-container {
+  margin-top: 10%;
+}
