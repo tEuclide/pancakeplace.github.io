@@ -255,7 +255,6 @@ button, input, select, textarea {
   line-height: inherit; }
 
 a {
-  color: #337ab7;
   text-decoration: none; }
 
 a:focus, a:hover {
@@ -5077,7 +5076,7 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: #2a7ae2;
+
   text-decoration: none; }
 
 a:visited {
@@ -5764,6 +5763,7 @@ h1, h2, h3, h4, h5, h6 {
 
   .uberEats-ribbon-text{
     text-decoration: none;
+    color: white;
   }
 
   .uberEats-ribbon-text:hover {
